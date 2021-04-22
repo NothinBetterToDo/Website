@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Page Title</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">  
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a> 
+                    </div>
+                </div>
+                
+                <div class="right-side">
+                    <div class="brand">
+                        <div>DERRINE CHIA</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/christopher-gower-m_HRfLhgABo-unsplash.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/icons8-pagelines-500-2.png", alt="">
+                            </div>
+
+                            <div class="subtitle">Interest: A platform to document my interests in coding.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/andrew-donovan-valdivia-G3DcS8Ip3ow-unsplash.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/dessert.png", alt="">
+                            </div>
+
+                            <div class="subtitle">Industry Knowledge: Staying abreast of changes and practices.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/alex-loup-2zDw14yCYqk-unsplash.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/kitchen.png", alt="">
+                            </div>
+
+                            <div class="subtitle">Bookmarks: Manage my bookmarks and share with others.</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/sangga-rima-roman-selia-KhnCUt5ZQcc-unsplash.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/heart.png", alt="">
+                            </div>
+
+                            <div class="subtitle">Books: Just a list of books that I have read.</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/denise-jans-Lq6rcifGjOU-unsplash.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/popcorn.png", alt="">
+                            </div>
+
+                            <div class="subtitle">Videos: Capturing the moments how the apps and programs work.</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/markus-spiske-v8RvC5HGUlA-unsplash.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/paint.png", alt="">
+                            </div>
+
+                            <div class="subtitle">All other things that I wish to learn.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
