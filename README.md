@@ -10,10 +10,10 @@
 * [Contact](#contact)
 
 ## General Info
-My hobby project - to start building my personal website using HTML, CSS.
+My hobby project - to start building my personal website using HTML5, CSS, Javascript.
 
  ## IDE
-* Visual Studio (HTML, CSS)
+* Visual Studio (HTML5, CSS)
 
 ## Projects
 [Building Person Website](https://github.com/NothinBetterToDo/Website/tree/main/Building%20personal%20website)
